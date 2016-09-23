@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -12,17 +13,20 @@ namespace StatsReaderFromTxt
 {
     public class TxtReader
     {
-        public void LoadStats(string path)
+        public List<Stats> LoadStats(string path)
         {
-            //string text = File.ReadAllText(path);
+            List<Stats> result = new List<Stats>();
 
             string[] lines = File.ReadAllLines(path);
+            string[] elements;
 
             foreach (string line in lines)
             {
-                var elements = line.Split(',');
-                Debug.WriteLine(elements.Length);
+                elements = line.Split(',');
+                result.Add(ParseStats(elements));
             }
+
+            return result;
         }
 
         private Stats ParseStats(string[] elements)
@@ -41,8 +45,10 @@ namespace StatsReaderFromTxt
 
         private DateTime ParseDatetime(string strDate, string strTime)
         {
-
-
+            string datetime = strDate + strTime;
+            DateTime dt = DateTime.ParseExact(datetime, "yyyyMMddHHmmss", CultureInfo.InvariantCulture);
+            //Debug.WriteLine(dt);
+            return dt;
         }
     }
 }
