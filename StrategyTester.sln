@@ -9,6 +9,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Strategy", "Strategy", "{5A
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Candles", "Candles", "{E2FC0E3D-90CC-47C1-AFF1-BAE99350C68B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StatsReaderFromTxt", "StatsLoaderFromTxt\StatsReaderFromTxt.csproj", "{A334A6DA-867D-4218-B90B-602BD1F277D2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Models", "Models\Models.csproj", "{9688F8A5-C55C-4A7B-ADCB-F514FC81C540}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,6 +23,14 @@ Global
 		{30D41A3B-2644-4213-9194-B89BEDC8C0C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{30D41A3B-2644-4213-9194-B89BEDC8C0C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{30D41A3B-2644-4213-9194-B89BEDC8C0C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A334A6DA-867D-4218-B90B-602BD1F277D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A334A6DA-867D-4218-B90B-602BD1F277D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A334A6DA-867D-4218-B90B-602BD1F277D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A334A6DA-867D-4218-B90B-602BD1F277D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9688F8A5-C55C-4A7B-ADCB-F514FC81C540}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9688F8A5-C55C-4A7B-ADCB-F514FC81C540}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9688F8A5-C55C-4A7B-ADCB-F514FC81C540}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9688F8A5-C55C-4A7B-ADCB-F514FC81C540}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
