@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using StatsReaderFromTxt;
 
 namespace StrategyTester
 {
@@ -15,6 +16,14 @@ namespace StrategyTester
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string path = @"C:\Users\Aberkromb\Documents\Visual Studio 2015\Projects\StrategyTester\SPFB.RTS_160101_160918.txt";
+
+            TxtReader reader = new TxtReader();
+            reader.LoadStats(path);
         }
     }
 }

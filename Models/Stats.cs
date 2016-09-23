@@ -16,5 +16,11 @@ namespace Models
         public float High { get; set; }
         public float Low { get; set; }
         public float Close { get; set; }
+        public int Volume { get; set; }
+
+        public override string ToString()
+        {
+            return string.Concat(Name + " " + Period + " " + DateNTime + " " + Open + " " + High + " " + Low + " " + Close);
+        }
     }
 }
