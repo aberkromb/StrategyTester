@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LibsLoader
+namespace InterfaceStrategyLib
 {
-    public class Class1
+    public interface IStrategy
     {
     }
 }
