@@ -34,10 +34,10 @@ namespace StatsReaderFromTxt
             string sName = elements[0];
             int sPeriod = int.Parse(elements[1]);
             DateTime sDateNTime = DateTime.Now; //elements[2]
-            float sOpen = float.Parse(elements[4]);
-            float sHigh = float.Parse(elements[5]); 
-            float sLow = float.Parse(elements[6]);
-            float sClose = float.Parse(elements[7]);
+            float sOpen = float.Parse(elements[4], CultureInfo.InvariantCulture);
+            float sHigh = float.Parse(elements[5], CultureInfo.InvariantCulture); 
+            float sLow = float.Parse(elements[6], CultureInfo.InvariantCulture);
+            float sClose = float.Parse(elements[7], CultureInfo.InvariantCulture);
             int sVolume = int.Parse(elements[8]);
 
             return new Stats() {Name = sName, Period = sPeriod, DateNTime = sDateNTime, Open = sOpen, High = sHigh, Low = sLow, Close = sClose, Volume = sVolume};
