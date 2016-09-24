@@ -36,7 +36,7 @@
             // 
             this.rtb_Main.Location = new System.Drawing.Point(12, 12);
             this.rtb_Main.Name = "rtb_Main";
-            this.rtb_Main.Size = new System.Drawing.Size(612, 331);
+            this.rtb_Main.Size = new System.Drawing.Size(311, 331);
             this.rtb_Main.TabIndex = 0;
             this.rtb_Main.Text = "";
             // 
