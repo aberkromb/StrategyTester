@@ -18,6 +18,7 @@ namespace StrategyTester
             InitializeComponent();
         }
 
+        //TODO Кнопка для тестирования текущих наработок
         private void button1_Click(object sender, EventArgs e)
         {
             string path = @"C:\Users\Aberkromb\Documents\Visual Studio 2015\Projects\StrategyTester\SPFB.RTS_160101_160918.txt";

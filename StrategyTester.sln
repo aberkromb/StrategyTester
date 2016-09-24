@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StatsReaderFromTxt", "Stats
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Models", "Models\Models.csproj", "{9688F8A5-C55C-4A7B-ADCB-F514FC81C540}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibsLoader", "LibsLoader\LibsLoader.csproj", "{4EBA18F4-635C-45D1-AC6C-77BEB157BAA2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,6 +33,10 @@ Global
 		{9688F8A5-C55C-4A7B-ADCB-F514FC81C540}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9688F8A5-C55C-4A7B-ADCB-F514FC81C540}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9688F8A5-C55C-4A7B-ADCB-F514FC81C540}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4EBA18F4-635C-45D1-AC6C-77BEB157BAA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4EBA18F4-635C-45D1-AC6C-77BEB157BAA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4EBA18F4-635C-45D1-AC6C-77BEB157BAA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4EBA18F4-635C-45D1-AC6C-77BEB157BAA2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
