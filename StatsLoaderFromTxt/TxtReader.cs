@@ -33,7 +33,7 @@ namespace StatsReaderFromTxt
         {
             string sName = elements[0];
             int sPeriod = int.Parse(elements[1]);
-            DateTime sDateNTime = ParseDatetime(elements[2],elements[3]); //elements[2]
+            DateTime sDateNTime = ParseDatetime(elements[2],elements[3]);
             float sOpen = float.Parse(elements[4], CultureInfo.InvariantCulture);
             float sHigh = float.Parse(elements[5], CultureInfo.InvariantCulture); 
             float sLow = float.Parse(elements[6], CultureInfo.InvariantCulture);
@@ -50,5 +50,6 @@ namespace StatsReaderFromTxt
             //Debug.WriteLine(dt);
             return dt;
         }
+        
     }
 }
