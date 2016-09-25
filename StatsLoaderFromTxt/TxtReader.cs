@@ -47,7 +47,6 @@ namespace StatsReaderFromTxt
         {
             string datetime = strDate + strTime;
             DateTime dt = DateTime.ParseExact(datetime, "yyyyMMddHHmmss", CultureInfo.InvariantCulture);
-            //Debug.WriteLine(dt);
             return dt;
         }
         

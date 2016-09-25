@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibsLoader", "LibsLoader\Li
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interfaces", "InterfaceStrategyLib\Interfaces.csproj", "{F59FF4DE-85CD-4E34-AD07-E8EF0AF256F9}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ModelAndInterfaces", "ModelAndInterfaces", "{1B78E2BA-75C6-452F-A235-31D4172CDFD0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
