@@ -24,7 +24,7 @@ namespace StrategyTester
             string path = @"C:\Users\Aberkromb\Documents\Visual Studio 2015\Projects\StrategyTester\SPFB.RTS_160101_160918.txt";
 
             TxtReader reader = new TxtReader();
-            reader.LoadStats(path);
+            var allstats = reader.LoadStats(path);
         }
     }
 }
