@@ -15,7 +15,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Models", "Models\Models.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibsLoader", "LibsLoader\LibsLoader.csproj", "{4EBA18F4-635C-45D1-AC6C-77BEB157BAA2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterfaceStrategyLib", "InterfaceStrategyLib\InterfaceStrategyLib.csproj", "{F59FF4DE-85CD-4E34-AD07-E8EF0AF256F9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interfaces", "InterfaceStrategyLib\Interfaces.csproj", "{F59FF4DE-85CD-4E34-AD07-E8EF0AF256F9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

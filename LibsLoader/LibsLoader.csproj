@@ -44,9 +44,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\InterfaceStrategyLib\InterfaceStrategyLib.csproj">
+    <ProjectReference Include="..\InterfaceStrategyLib\Interfaces.csproj">
       <Project>{f59ff4de-85cd-4e34-ad07-e8ef0af256f9}</Project>
-      <Name>InterfaceStrategyLib</Name>
+      <Name>Interfaces</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
