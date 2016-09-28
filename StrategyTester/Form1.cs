@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using LibsLoader;
 using StatsReaderFromTxt;
 
 namespace StrategyTester
@@ -25,6 +26,10 @@ namespace StrategyTester
 
             TxtReader reader = new TxtReader();
             var allstats = reader.LoadStats(path);
+
+            var patterns = LoadStrategies.Load();
+
+            var test = patterns[0].Logic(allstats);
         }
     }
 }

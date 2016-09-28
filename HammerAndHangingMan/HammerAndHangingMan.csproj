@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F59FF4DE-85CD-4E34-AD07-E8EF0AF256F9}</ProjectGuid>
+    <ProjectGuid>{DA37EF4C-656D-43ED-B40B-3EC010B7CA42}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>IInterfaces</RootNamespace>
-    <AssemblyName>IInterfaces</AssemblyName>
+    <RootNamespace>HammerAndHangingMan</RootNamespace>
+    <AssemblyName>HammerAndHangingMan</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -30,10 +30,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Interfaces, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Debug\Interfaces.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -44,10 +40,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IPattern.cs" />
+    <Compile Include="Hammer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\InterfaceStrategyLib\Interfaces.csproj">
+      <Project>{f59ff4de-85cd-4e34-ad07-e8ef0af256f9}</Project>
+      <Name>Interfaces</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Models\Models.csproj">
       <Project>{9688f8a5-c55c-4a7b-adcb-f514fc81c540}</Project>
       <Name>Models</Name>
