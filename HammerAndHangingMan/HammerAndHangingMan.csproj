@@ -44,6 +44,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Enums\Enums.csproj">
+      <Project>{e81d05ef-bb1e-4262-869c-41aa332edbae}</Project>
+      <Name>Enums</Name>
+    </ProjectReference>
     <ProjectReference Include="..\InterfaceStrategyLib\Interfaces.csproj">
       <Project>{f59ff4de-85cd-4e34-ad07-e8ef0af256f9}</Project>
       <Name>Interfaces</Name>

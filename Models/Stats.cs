@@ -20,8 +20,11 @@ namespace Models
 
         public override string ToString()
         {
+            //TODO add SB?
+            //StringBuilder sb = new StringBuilder();
+            
             //return string.Concat(Name + " " + Period + " " + DateNTime.ToString("yyyyMMdd HHmmss") + " " + Open + " " + High + " " + Low + " " + Close + " " + Volume);
-            return string.Concat(Name + " " + Period + " " + DateNTime + " " + Open + " " + High + " " + Low + " " + Close + " " + Volume);
+            return string.Concat($"{Name} {Period} {DateNTime} {Open} {High} {Low} {Close} {Volume}");
         }
     }
 }

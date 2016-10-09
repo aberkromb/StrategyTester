@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices.ComTypes;
 using System.Text;
 using System.Threading.Tasks;
 using IInterfaces;
@@ -12,8 +13,8 @@ namespace HammerAndHangingMan
     {
         public string Name { get; } = "Молот (Hammer)";
         public Guid UniqId { get; } = new Guid("C42CDE37-5B6A-4963-9BDB-0FF78BEA16EB");
-        public string TypeOfLib { get; } = "Pattern";
-        public string TypeOfPosition { get; } = "Bull";
+        public byte TypeOfLib { get; } = (byte)Enums.TypeOfLib.Pattern ;
+        public byte TypeOfPosition { get; } = (byte)Enums.TypeOfPosition.Bull ;
         public string Discription { get; } = @"Бычий паттерн разворота. Находится в нижней части (ценового диапазона). Тень в 2 раза > тела. Верхняя тень либо отсутствует, либо мала. Цвет тела значения не имеет.";
 
         public List<Stats> Logic(List<Stats> stats)

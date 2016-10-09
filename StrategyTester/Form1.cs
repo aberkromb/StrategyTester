@@ -37,14 +37,17 @@ namespace StrategyTester
             TxtReader reader = new TxtReader();
             var allstats = reader.LoadStats(path);
 
-            var patterns = LoadStrategies.Load();
+            LoadStrategies.Load();
+            var patterns = LoadStrategies.GetPatterns;
+            var strategies = LoadStrategies.GetStrategies;
 
-            var test = patterns[0].Logic(allstats);
+            Console.WriteLine(" ");
+            //var test = patterns[0].Logic(allstats);
 
-            foreach (var t in test)
-            {
-                rtb_Main.Text = rtb_Main.Text + t + '\n';
-            }
+            //foreach (var t in test)
+            //{
+            //    rtb_Main.Text = rtb_Main.Text + t + '\n';
+            //}
         }
     }
 }

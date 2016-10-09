@@ -14,9 +14,15 @@ namespace LibsLoader
 {
     public static class LoadStrategies
     {
-        public static Collection<IPattern> Load()
+        private static Collection<IPattern> _patterns = new Collection<IPattern>();
+        private static Collection<IStrategy> _strategies = new Collection<IStrategy>();
+
+        public static Collection<IPattern> GetPatterns => _patterns;
+        public static Collection<IStrategy> GetStrategies => _strategies;
+
+        public static void Load()
         {
-            Collection<IPattern> Modules = new Collection<IPattern>();
+            
 
             string folder = Path.Combine(AppDomain.CurrentDomain.BaseDirectory + @"lib");
 
@@ -31,12 +37,22 @@ namespace LibsLoader
                         Assembly assembly = Assembly.LoadFrom(file);
                         foreach (Type type in assembly.GetTypes())
                         {
-                            Type iface = type.GetInterface("IPattern");
-                            if (iface != null)
+                            //TODO Switch?
+
+                            Type iPattern = type.GetInterface("IPattern");
+                            if (iPattern != null)
                             {
                                 IPattern module = (IPattern)Activator.CreateInstance(type);
-                                Modules.Add(module);
+                                _patterns.Add(module);
                             }
+
+                            Type iStrategy = type.GetInterface("IStrategy");
+                            if (iStrategy != null)
+                            {
+                                IStrategy module = (IStrategy) Activator.CreateInstance(type);
+                                _strategies.Add(module);
+                            }
+
                         }
                     }
                     catch (Exception ex)
@@ -45,7 +61,7 @@ namespace LibsLoader
                     }
                 }
             }
-            return Modules;
+            //return _patterns;
         }
     }
 }
