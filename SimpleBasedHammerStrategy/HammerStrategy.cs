@@ -31,13 +31,7 @@ namespace SimpleBasedHammerStrategy
 
             foreach (var pPoint in patternPoints)
             {
-                foreach (var candle in stats)
-                {
-                    if (pPoint.DateNTime == candle.DateNTime)
-                    {
-                        pointsOfEntry.Add(new PointsOfEntry(candle.Name, candle.DateNTime, TypeOfPosition, candle.Close));
-                    }
-                }
+                pointsOfEntry.Add(new PointsOfEntry(pPoint.Name, pPoint.DateNTime, TypeOfPosition, pPoint.Close));
             }
 
             return pointsOfEntry;
