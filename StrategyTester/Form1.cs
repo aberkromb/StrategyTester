@@ -22,7 +22,7 @@ namespace StrategyTester
         //TODO Кнопка для тестирования текущих наработок
         private void button1_Click(object sender, EventArgs e)
         {
-            string path = @"C:\Users\Aberkromb\Documents\Visual Studio 2015\Projects\StrategyTester\SPFB.RTS_160101_160918.txt";
+            string path = @"C:\Users\Aberkromb\Documents\Visual Studio 2015\Projects\StrategyTester\SBER_160101_161001-1.txt";
 
             TxtReader reader = new TxtReader();
             var allstats = reader.LoadStats(path);
@@ -30,6 +30,11 @@ namespace StrategyTester
             var patterns = LoadStrategies.Load();
 
             var test = patterns[0].Logic(allstats);
+
+            foreach (var t in test)
+            {
+                rtb_Main.Text = rtb_Main.Text + t + '\n';
+            }
         }
     }
 }

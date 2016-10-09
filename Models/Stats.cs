@@ -20,7 +20,8 @@ namespace Models
 
         public override string ToString()
         {
-            return string.Concat(Name + " " + Period + " " + DateNTime + " " + Open + " " + High + " " + Low + " " + Close);
+            //return string.Concat(Name + " " + Period + " " + DateNTime.ToString("yyyyMMdd HHmmss") + " " + Open + " " + High + " " + Low + " " + Close + " " + Volume);
+            return string.Concat(Name + " " + Period + " " + DateNTime + " " + Open + " " + High + " " + Low + " " + Close + " " + Volume);
         }
     }
 }
