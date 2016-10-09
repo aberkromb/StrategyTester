@@ -31,7 +31,7 @@ namespace SimpleBasedHammerStrategy
 
             foreach (var pPoint in patternPoints)
             {
-                pointsOfEntry.Add(new PointsOfEntry(pPoint.Name, pPoint.DateNTime, TypeOfPosition, pPoint.Close));
+                pointsOfEntry.Add(new PointsOfEntry(pPoint.Name,pPoint.Period, pPoint.DateNTime, TypeOfPosition, pPoint.Close));
             }
 
             return pointsOfEntry;
