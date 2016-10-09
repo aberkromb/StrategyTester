@@ -41,6 +41,10 @@ namespace StrategyTester
             var patterns = LoadStrategies.GetPatterns;
             var strategies = LoadStrategies.GetStrategies;
 
+            SimpleBasedHammerStrategy.HammerStrategy testStrategy = new SimpleBasedHammerStrategy.HammerStrategy();
+            var entryPoints = testStrategy.Logic(allstats);
+
+
             Console.WriteLine(" ");
             //var test = patterns[0].Logic(allstats);
 

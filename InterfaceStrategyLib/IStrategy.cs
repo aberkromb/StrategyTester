@@ -11,6 +11,6 @@ namespace IInterfaces
         byte TypeOfLib { get; }
         byte TypeOfPosition { get; }
         string Discription { get; }
-        List<Stats> Logic(List<Stats> stats);
+        List<PointsOfEntry> Logic(List<Stats> stats);
     }
 }

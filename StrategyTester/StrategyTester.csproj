@@ -96,6 +96,10 @@
       <Project>{9688f8a5-c55c-4a7b-adcb-f514fc81c540}</Project>
       <Name>Models</Name>
     </ProjectReference>
+    <ProjectReference Include="..\SimpleBasedHammerStrategy\SimpleBasedHammerStrategy.csproj">
+      <Project>{cc33bca7-511b-4d62-b314-3af04455f546}</Project>
+      <Name>SimpleBasedHammerStrategy</Name>
+    </ProjectReference>
     <ProjectReference Include="..\StatsLoaderFromTxt\StatsReaderFromTxt.csproj">
       <Project>{a334a6da-867d-4218-b90b-602bd1f277d2}</Project>
       <Name>StatsReaderFromTxt</Name>

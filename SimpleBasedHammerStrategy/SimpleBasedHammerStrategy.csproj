@@ -16,7 +16,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
+    <OutputPath>..\StrategyTester\bin\Debug\lib\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -51,6 +51,10 @@
     <ProjectReference Include="..\InterfaceStrategyLib\Interfaces.csproj">
       <Project>{f59ff4de-85cd-4e34-ad07-e8ef0af256f9}</Project>
       <Name>Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LibsLoader\LibsLoader.csproj">
+      <Project>{4eba18f4-635c-45d1-ac6c-77beb157baa2}</Project>
+      <Name>LibsLoader</Name>
     </ProjectReference>
     <ProjectReference Include="..\Models\Models.csproj">
       <Project>{9688f8a5-c55c-4a7b-adcb-f514fc81c540}</Project>

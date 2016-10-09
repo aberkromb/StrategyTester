@@ -4,18 +4,23 @@ namespace Models
 {
     public struct PointsOfEntry
     {
-        public struct Stats
+        public PointsOfEntry(string name, DateTime dateNTime, byte position, float entryPrice)
         {
-            public string Name { get; set; }
-            public DateTime DateNTime { get; set; }
-            public byte Position { get; set; }
-            public float EntryPrice { get; set; }
+            Name = name;
+            DateNTime = dateNTime;
+            Position = position;
+            EntryPrice = entryPrice;
+        }
 
-            public override string ToString()
-            {
-                //return string.Concat(Name + " " + Period + " " + DateNTime.ToString("yyyyMMdd HHmmss") + " " + Open + " " + High + " " + Low + " " + Close + " " + Volume);
-                return string.Concat($"{Name} {DateNTime} {Position} {EntryPrice}");
-            }
+        public string Name { get; set; }
+        public DateTime DateNTime { get; set; }
+        public byte Position { get; set; }
+        public float EntryPrice { get; set; }
+
+        public override string ToString()
+        {
+            //return string.Concat(Name + " " + Period + " " + DateNTime.ToString("yyyyMMdd HHmmss") + " " + Open + " " + High + " " + Low + " " + Close + " " + Volume);
+            return string.Concat($"{Name} {DateNTime} {Position} {EntryPrice}");
         }
     }
 }
